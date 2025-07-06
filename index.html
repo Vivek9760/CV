@@ -7,32 +7,48 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
+      background-color: #e5e7eb; /* light gray for contrast */
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
     }
-    h1, h2 {
-      letter-spacing: 0.5px;
+    .frame {
+      background-color: white;
+      border: 6px solid #d1d5db;
+      padding: 2rem;
+      max-width: 850px;
+      margin: auto;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      border-radius: 1rem;
     }
     .section-title {
       border-bottom: 2px solid #e5e7eb;
       padding-bottom: 4px;
       margin-bottom: 12px;
+      font-weight: 600;
     }
   </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <main class="max-w-4xl mx-auto bg-white p-8 mt-10 rounded-xl shadow-lg">
+<body>
+  <div class="frame">
     <!-- Header -->
     <header class="text-center mb-6">
       <h1 class="text-3xl font-bold text-gray-900">Vivek Saini</h1>
-      <p class="mt-1 text-gray-700">📞 +91 9760567800 | 📧 vvivekssaini@gmail.com</p>
+      <p class="mt-1 text-gray-700">
+        📞 +91 9760567800 | 📧 
+        <a href="mailto:vvivekssaini@gmail.com" class="text-blue-600 hover:underline">vvivekssaini@gmail.com</a>
+      </p>
       <p>📍 Roorkee, Uttarakhand</p>
-      <p class="mt-1">GitHub: <a href="https://github.com/Vivek9760" class="text-blue-600 hover:underline">github.com/Vivek9760</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/vivek-saini-73a5a3250" class="text-blue-600 hover:underline">linkedin.com/in/vivek-saini-73a5a3250</a></p>
+      <p class="mt-1">
+        GitHub: <a href="https://github.com/Vivek9760" class="text-blue-600 hover:underline">github.com/Vivek9760</a>
+      </p>
+      <p>
+        LinkedIn: <a href="https://linkedin.com/in/vivek-saini-73a5a3250" class="text-blue-600 hover:underline">linkedin.com/in/vivek-saini-73a5a3250</a>
+      </p>
     </header>
 
-    <!-- Summary -->
+    <!-- Professional Summary -->
     <section class="mb-6">
-      <h2 class="text-xl font-semibold section-title">💼 Professional Summary</h2>
+      <h2 class="text-xl section-title">💼 Professional Summary</h2>
       <p>
         Full-Stack Developer with 2 years of experience in building scalable web applications using modern technologies such as Vue.js, React.js, Node.js, and MongoDB. Adept at designing optimized database schemas, leading development teams, and managing complete project lifecycles from architecture to deployment. Passionate about writing clean, maintainable code and delivering intuitive, high-performance user interfaces. Enthusiastic about learning and working with new tools and technologies.
       </p>
@@ -40,14 +56,14 @@
 
     <!-- Education -->
     <section class="mb-6">
-      <h2 class="text-xl font-semibold section-title">🎓 Education</h2>
+      <h2 class="text-xl section-title">🎓 Education</h2>
       <p class="font-medium">B.Tech in Electrical and Electronics Engineering.</p>
       <p>College of Engineering Roorkee (COER), Roorkee (2018 – 2022).</p>
     </section>
 
     <!-- Technical Skills -->
     <section class="mb-6">
-      <h2 class="text-xl font-semibold section-title">🛠️ Technical Skills</h2>
+      <h2 class="text-xl section-title">🛠️ Technical Skills</h2>
       <ul class="list-disc list-inside">
         <li><strong>Languages & Frameworks:</strong> JavaScript, Node.js, Express.js, Vue.js, React.js.</li>
         <li><strong>Databases:</strong> MongoDB, MySQL (basics), PostgreSQL (basics).</li>
@@ -58,7 +74,7 @@
 
     <!-- Soft Skills -->
     <section class="mb-6">
-      <h2 class="text-xl font-semibold section-title">🌟 Soft Skills</h2>
+      <h2 class="text-xl section-title">🌟 Soft Skills</h2>
       <ul class="list-disc list-inside">
         <li>Strong problem-solving and analytical thinking.</li>
         <li>Effective communication and team collaboration.</li>
@@ -71,7 +87,7 @@
 
     <!-- Experience -->
     <section class="mb-6">
-      <h2 class="text-xl font-semibold section-title">🔹 Professional Experience</h2>
+      <h2 class="text-xl section-title">🔹 Professional Experience</h2>
 
       <h3 class="font-bold text-gray-800">Software Developer – Agami Technology Pvt. Ltd.</h3>
       <p class="text-sm italic text-gray-600 mb-2">July 2023 – Present.</p>
@@ -112,7 +128,7 @@
 
     <!-- Certifications -->
     <section>
-      <h2 class="text-xl font-semibold section-title">📚 Certifications & Training</h2>
+      <h2 class="text-xl section-title">📚 Certifications & Training</h2>
       <ul class="list-disc list-inside">
         <li><strong>ReactJS – CETPA InfoTech Pvt. Ltd.</strong> (6 Weeks).
           <br /><span class="text-sm text-gray-600">ReactJS, React-Bootstrap, Material UI.</span>
@@ -122,6 +138,7 @@
         </li>
       </ul>
     </section>
-  </main>
+
+  </div>
 </body>
 </html>
